@@ -13,8 +13,56 @@
             <p class="description text-center" id="description">Thank you for taking the time to help us improve!</p>
         </header>
         <form id="survey-form">
-            <label for="name" id="name-label">name:</label>
-            <input type="text" id="name" class="form-control" placeholder="enter your name">
+            <div class="form-group">
+                <label for="name" id="name-label">name:</label>
+                <input type="text" id="name" class="form-control" placeholder="enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">email:</label>
+                <input type="email" id="email" class="form-control" placeholder="enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="age-label">age:</label>
+                <input type="number" min="17" max="70" id="age" class="form-control" placeholder="enter your age" required>
+            </div>
+            <div class="form-group">
+                <p>how many of you are dining?</p>
+                <select name="dinningnumber" id="dropdown" class="form-control" required>
+                    <option disabled selected>select group size</option>
+                    <option value="individual">alone</option>
+                    <option value="couple">couple</option>
+                    <option value="smallgroup">3-4 people</option>
+                    <option value="largegroup">more than 4 people</option>
+                    <option value="undisclosed">prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>would you recommend our restaurant to your friend?</p>
+                <label ><input type="radio" name="user-recomend" class="input-radio" value="definitely">definitely</label>
+                <label ><input type="radio" name="user-recomend" class="input-radio" value="maybe">maybe</label>
+                <label ><input type="radio" name="user-recomend" class="input-radio" value="not- sure">not sure</label>
+                <label ><input type="radio" name="user-recomend" class="input-radio" value="no">no</label>
+            </div>
+            <div class="form-group">
+                <p>what is your favorite menu in our restaurant?</p>
+                <img src="Images/Nasi-Goreng-4.jpg" alt="">
+                <label ><input type="checkbox" name="user-menu" class="input-checkbox" value="nasi goreng">nasi goreng</label>
+                <img src="Images/Chicken-Tikka-Masala-Square.jpg" alt="">
+                <label ><input type="checkbox" name="user-menu" class="input-checkbox" value="chicken tika masala">chicken tika masala</label>
+                <img src="Images/fish-and-chips-recipe-2.jpg" alt="">
+                <label ><input type="checkbox" name="user-menu" class="input-checkbox" value="fish and chips">fish and chips</label>
+                <img src="Images/chocolate-milk-recipe-2355494-hero-01-d44b4548f5904a758ed12d5caa0466fd.jpg" alt="">
+                <label ><input type="checkbox" name="user-menu" class="input-checkbox" value="ovaltine cream">ovaltine cream</label>
+                <img src="Images/shutterstock_1778837789-500x300.jpg" alt="">
+                <label ><input type="checkbox" name="user-menu" class="input-checkbox" value="mie ayam">mie ayam</label>
+            </div>
+            <div class="form-group">
+                <p>any comment or suggestion?</p>
+                <textarea name="comment" id="comment" class="input-textarea" placeholder="enter your comment here"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">submit</button>
+            </div>
         </form>
     </div>
 </body>
